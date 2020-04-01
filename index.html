@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		@keyframes moving {
+	{transform: rotate(20deg);
+}
+	</style>
+		<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+$("document").ready(function(){	
+ $("#element").css("display", "none");
+ $("#show").click(function(){
+  $("#element").show();
+});
+
+$("#changeColor").click(function(){
+ $("#first").css("color", "green");
+ $("#second").css("color", "red");
+ $("#third").css("color", "red");
+ $("#firstradio").attr("checked","checked");
+});
+$("#btn1").click(function(){
+ $("body").css("backgroundColor", "green");
+
+});
+$("#btn2").click(function(){
+ $("body").css("backgroundColor", "grey");
+});
+$("#btn3").click(function(){
+ $("body").css("backgroundColor", "blue");
+
+});
+$("#btn4").click(function(){
+ $("red").css("Color", "red");
+ $("green").css("Color", "green");
+ $("blue").css("Color", "blue");
+
+});
+});
+</script>
+</head>
+
+<body>
+	
+<span> Question one : What is HTU</span>
+<button id="show">Show the answer</button>
+<p id="element">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+<br>
+<br>
+<span> Question Two : What is JQuery</span>
+<form id="radioForm">
+    <label id="first"><input type="radio"name="r" id="firstradio" >Java Script</label>
+    <label id="second"><input type="radio" name="r" >html</label>
+    <label id="third"><input type="radio"name="r" >CSS</label>
+    <br>
+    <input type="button" id="changeColor" value="Test Your Answer" />
+</form>
+<br>
+<br>
+<table>
+	<tr> 
+		<td class="green">HTML</td>
+		<td><hr></td>
+		<td class="red">Java Script</td>
+	</tr>
+	<tr>
+		<td class="blue">CSS</td>
+		<td><hr></td>
+		<td class="green">Hyper Text Markup Language</td>
+	</tr>
+	<tr>
+		<td class="red">JS</td>
+		<td><hr></td>
+<td class="blue">Caccading Style Sheet</td>
+	</tr>
+	<br>
+	<tr><td colspan="2"><button id="btn4">Show the correct answer</button></td>
+</table>
+<br>
+<br>
+<button id="btn1">Green</button>
+<button id="btn2">Grey</button>
+<button id="btn3">Blue</button>
+</body>
+</html>
